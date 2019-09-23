@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/profile_setup_textview"
+                android:text="Profile Setup"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:background="@color/colorAccent"
+                android:gravity="center_horizontal"
+                android:layout_marginBottom="32dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_setup_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:hint="First Name"
+                android:layout_below="@id/profile_setup_textview"
+                android:background="@drawable/button_background_white"
+                android:inputType="text"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_setup_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:hint="Last Name"
+                android:layout_below="@id/profile_setup_firstname"
+                android:background="@drawable/button_background_white"
+                android:inputType="text"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_setup_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:layout_below="@id/profile_setup_lastname"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="Email"
+                android:background="@drawable/button_background_white"
+                android:inputType="textEmailAddress"/>
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/profile_setup_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:layout_below="@id/profile_setup_email"
+                android:inputType="textPassword"
+                android:background="@drawable/button_background_white"
+                android:hint="Password"/>
+
+            <Button
+                android:text="Effect Change"
+                android:id="@+id/profile_setup_summit_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/profile_setup_password"
+                android:textColor="@android:color/white"
+                android:background="@drawable/button_background_accent"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp" />
+
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <ProgressBar
+        android:id="@+id/profile_setup_spin_kit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

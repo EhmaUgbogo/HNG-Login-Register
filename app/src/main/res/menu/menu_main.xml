@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/main_menu_logout"
+        android:title="@string/logout"
+        android:icon="@drawable/ic_settings_power_black_24dp"/>
+    <item
+        android:id="@+id/main_menu_delete_account"
+        android:title="@string/delete_account"/>
+</menu>
