@@ -52,10 +52,10 @@ public class MainActivity extends BaseActivity {
     private void initViews() {
         userName = findViewById(R.id.main_activity_username);
         email = findViewById(R.id.main_activity_email_text);
-        Button logInBtn=findViewById(R.id.main_activity_button);
+        Button editAccountBtn=findViewById(R.id.main_activity_button);
 
 
-        logInBtn.setOnClickListener(new View.OnClickListener() {
+        editAccountBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 openBottomSheetProfileSetup();
